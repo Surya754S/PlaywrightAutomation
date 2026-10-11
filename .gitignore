@@ -1,0 +1,11 @@
+node_modules/
+playwright-report/
+test-results/
+allure-results/
+allure-report/
+blob-report/
+all-blob-reports/
+.auth/
+.env
+.env.*
+!.env.example

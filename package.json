@@ -1,0 +1,26 @@
+{
+  "name": "automationexercise-playwright",
+  "version": "1.0.0",
+  "private": true,
+  "description": "TypeScript Playwright Page Object Model tests for Automation Exercise",
+  "scripts": {
+    "test": "playwright test",
+    "test:smoke": "playwright test --grep @smoke",
+    "test:api": "playwright test --project=api",
+    "test:chromium": "playwright test --project=chromium",
+    "test:headed": "playwright test --headed",
+    "test:ui": "playwright test --ui",
+    "test:report": "playwright show-report",
+    "report:allure": "allure generate allure-results --clean --output allure-report",
+    "report:allure:open": "allure open allure-report",
+    "install:browsers": "playwright install chromium"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.55.1",
+    "@types/node": "^22.0.0",
+    "allure-commandline": "^2.46.1",
+    "allure-playwright": "3.0.0",
+    "dotenv": "^16.4.7",
+    "typescript": "^5.9.0"
+  }
+}
